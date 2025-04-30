@@ -1,27 +1,105 @@
 
-#bornACrimeBlog{
-    height: 60vh;
-    width: 40vh;
+#bornACrimeImage{
+    height: 40vh;
+    width: 30vh;
 }
 body{
-    margin: 5vh 20vh;
+    /* margin: 5vh 20vh; */
     background-color: rgb(244, 245, 246);
-    border: 2px solid;
-    font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 35px;
+    margin: 0;
     
 }
-.body{
-    background-color: rgb(233, 244, 245);
-    padding: 50px;
-    box-shadow:5px 5px 5px 5px rgb(197, 196, 196), -5px -5px 5px 5px rgb(197, 196, 196);
-    
-}
-
-.rename{
+.myImage{
     display: flex;
+    gap: 30px;
+    justify-content: center;
+    height: 60px
+    
+}
+#title{
+    text-align: center;
+    font-size:70px;
+}
+#myImage{
+    height: 60px;
+    width: 50px;
+    border-radius: 50%;
+}
+.heroBar{
+    background-color: rgb(154, 173, 224);
+    margin-top: -20px;
+    height: 40px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+
+}
+nav a{
+
+    text-decoration: none;
+    color:black
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 50px 0px 50px;
 }
 
+.introduction{
+    display: flex;
+    gap: 100px;
+    background-color: rgb(241, 236, 229);
+    padding: 30px;
+    margin-top: 60px;
+    margin: 5vh 20vh
+    
+}
+.reflectiveblog{
+    background-color: rgb(241, 236, 229);
+    padding: 30px;
+    margin-top: 60px;
+    margin: 5vh 20vh
+}
+.renameBornACrime{
+    background-color: rgb(241, 236, 229);
+    padding: 30px;
+    margin-top: 60px;
+    margin: 5vh 20vh
+    
+}
+.yourOpinion{
+    display: flex;
+    background-color: rgb(127, 163, 240);
+    height: 30vh;
+    
+}
+input{
+    height: 75%;
+    width: 120%;
+}
+.form{
+    border-left: 2px solid;
+    padding: 80px 50px 80px 150px;
+    
+}
+
+h2{
+    padding: 90px 150px 60px;
+}
+button{
+    color: blue;
+    margin: 20px 100px;
+    height: 50px;
+    width: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    
+}
 @media screen and (max-width:760px) {
     
     #bornACrimeBlog{
@@ -56,7 +134,7 @@ body{
     .body{
         background-color: rgb(233, 244, 245);
         padding: 50px;
-        box-shadow:5px 5px 5px 5px rgb(197, 196, 196), -5px -5px 5px 5px rgb(197, 196, 196);
+        box-shadow:1px 1px 1px 1px rgb(197, 196, 196), -1px -1px 1px 1px rgb(197, 196, 196);
         
     }
     body{
