@@ -9,18 +9,21 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 35px;
     margin: 0;
+    overflow-x: hidden;
     
 }
 .myImage{
     display: flex;
     gap: 30px;
     justify-content: center;
-    height: 60px
+    height: 70px;
+    padding-top: 5px;
     
 }
 #title{
     text-align: center;
     font-size:70px;
+    margin-top: 30px;
 }
 #myImage{
     height: 60px;
@@ -29,7 +32,7 @@ body{
 }
 .heroBar{
     background-color: rgb(154, 173, 224);
-    margin-top: -20px;
+    margin-top: 0px;
     height: 40px;
     text-align: center;
     border-bottom-left-radius: 20px;
@@ -79,6 +82,8 @@ nav{
 input{
     height: 75%;
     width: 120%;
+    padding: 20px;
+
 }
 .form{
     border-left: 2px solid;
@@ -100,52 +105,295 @@ button{
     border-bottom-right-radius:20px ;
     
 }
-@media screen and (max-width:760px) {
-    
-    #bornACrimeBlog{
-        height: 60vh;
-        width: 30vh;
-    }
-   
-    .body{
-        background-color: rgb(233, 244, 245);
-        padding: 50px;
-        box-shadow:5px 5px 5px 5px rgb(197, 196, 196), -5px -5px 5px 5px rgb(197, 196, 196);
-        
-    }
-    body{
-        margin: 5vh 5vh;
-        background-color: rgb(244, 245, 246);
-        border: 2px solid;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        
-    }
-    
-    .rename{
-        display: block;
-    }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-@media screen and (min-width:761px) and (max-width:1200px){
-    #bornACrimeBlog{
-        height: 50vh;
-        width: 50vh;
-    }
-   
-    .body{
-        background-color: rgb(233, 244, 245);
-        padding: 50px;
-        box-shadow:1px 1px 1px 1px rgb(197, 196, 196), -1px -1px 1px 1px rgb(197, 196, 196);
+footer{
+    background-color: black;
+    color: white;
+    justify-content: center;
+    
+}
+
+.foot{
+    display: flex;
+    gap: 2cm;
+    padding: 70px 30px 20px;
+    justify-content: center;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+.accounts i{
+    color: white;
+}
+.accounts i:hover{
+    color: blue;
+}
+.others a{
+    text-decoration: none;
+    color: white;
+}
+.footerBottom{
+    background-color: rgb(46, 44, 44);
+    padding: 20px;
+    text-align: center;
+}
+.alche img{
+    width: 100px;  
+}
+@media screen and (max-width:360px) {
+    .myImage{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        height: 60px
         
     }
-    body{
-        margin: 5vh 5vh;
-        background-color: rgb(244, 245, 246);
-        border: 2px solid;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    .introduction{
+        display: block;
+        gap: 100px;
+        background-color: rgb(241, 236, 229);
+        padding: 30px;
+        margin-top: 60px;
+        margin: 5vh 2vh
+        
+    }
+    .yourOpinion{
+        display: block;
+        background-color: rgb(127, 163, 240);
+        height: 60vh;
+        
+    }
+    nav{
+        display: table-caption;
+        justify-content: space-between;
+        padding: 60px 50px 0px 50px;
+    }
+    #title{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    h2{
+        padding: 30px;
+    }
+    .form{
+        border-top: 2px solid;
+        padding: 10px;
+        
+    }
+
+    input{
+        height: 105px;
+        width: 90%;
+    }
+
+    .reflectiveblog{
+        background-color: rgb(241, 236, 229);
+        padding: 30px;
+        margin-top: 60px;
+        margin: 5vh 2vh
+    }
+    .renameBornACrime{
+        background-color: rgb(241, 236, 229);
+        padding: 30px;
+        margin-top: 60px;
+        margin: 5vh 2vh
+        
+    }
+    .foot{
+        display: block;
+        gap: 2cm;
+        padding: 70px 30px 20px;
+        justify-content: center;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+    }
+
+    
+   
+
+}
+@media screen and (min-width:361px) and (max-width:720px){
+    .myImage{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        height: 60px
+        
+    }
+
+    .introduction{
+        display: block;
+        gap: 100px;
+        background-color: rgb(241, 236, 229);
+        padding: 30px;
+        margin-top: 60px;
+        margin: 5vh 2vh
+        
+    }
+    .yourOpinion{
+        display: block;
+        background-color: rgb(127, 163, 240);
+        height: 50vh;
+        
+    }
+    nav{
+        display: table-caption;
+        justify-content: space-between;
+        padding: 60px 50px 0px 50px;
+    }
+    #title{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    h2{
+        padding: 30px;
+    }
+    .form{
+        border-top: 2px solid;
+        padding: 10px;
+        
+    }
+
+    input{
+        height: 105px;
+        width: 90%;
+    }
+
+    .reflectiveblog{
+        background-color: rgb(241, 236, 229);
+        padding: 30px;
+        margin-top: 60px;
+        margin: 5vh 2vh
+    }
+    .renameBornACrime{
+        background-color: rgb(241, 236, 229);
+        padding: 30px;
+        margin-top: 60px;
+        margin: 5vh 2vh
+        
+    }
+    .foot{
+        display: block;
+        gap: 2cm;
+        padding: 70px 30px 20px;
+        justify-content: center;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+    }
+
+   
+}
+
+@media screen and (min-width:721px) and (max-width:1080px){
+    .myImage{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        height: 60px
+        
+    }
+    #title{
+        text-align: center;
+        font-size:70px;
+    }
+    #myImage{
+        height: 60px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .heroBar{
+        background-color: rgb(154, 173, 224);
+        margin-top: 0px;
+        height: 40px;
+        text-align: center;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        
+        
+    
+    }
+    nav a{
+    
+        text-decoration: none;
+        color:black
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 50px 0px 50px;
+    }
+    
+    .introduction{
+        display: flex;
+        background-color: rgb(241, 236, 229);
+        padding: 30px;
+        margin-top: 60px;
+        margin: 5vh 2vh
+        
+    }
+    .reflectiveblog{
+        background-color: rgb(241, 236, 229);
+        padding: 30px;
+        margin-top: 60px;
+        margin: 5vh 2vh
+    }
+    .renameBornACrime{
+        background-color: rgb(241, 236, 229);
+        padding: 30px;
+        margin-top: 60px;
+        margin: 5vh 2vh
+        
+    }
+    .yourOpinion{
+        display: flex;
+        background-color: rgb(127, 163, 240);
+        height: 30vh;
+        
+    }
+    input{
+        height: 75%;
+        width: 110%;
+        padding: 20px;
+    }
+    .form{
+        border-left: 2px solid;
+        padding: 80px 50px 80px 30px;
         
     }
     
-    .rename{
-        display: block;
+    h2{
+        padding: 90px 150px 60px;
     }
+    button{
+        color: blue;
+        margin: 20px 70px;
+        height: 50px;
+        width: 50%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius:20px ;
+        
+    }
+
+    .foot{
+        display: block;
+        gap: 2cm;
+        justify-content: center;
+        font-size: 0.9em;
+        letter-spacing: 1px;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        justify-content: center;
+        
+    }
+
 }
